@@ -23,7 +23,7 @@ $( document ).ready(function() {
             fileone: {
                 required: true
             },
-             'kit-club':{
+            'kit-club':{
                 required: true  
             },
             bank_name: {
@@ -175,9 +175,9 @@ $( document ).ready(function() {
             kit: {
                 required: "Este campo es obligatorio"
             },
-             'kit-club':{
+            'kit-club':{
                 required: "Este campo es obligatorio"
-  
+                
             },
             bank_name: {
                 required: "Este campo es obligatorio"
@@ -313,7 +313,7 @@ $( document ).ready(function() {
             'code-sponsor': {
                 required: "Este campo es obligatorio"
             },
-             'filetrhee': {
+            'filetrhee': {
                 required: "Este campo es obligatorio"
             },
             'fileone': {

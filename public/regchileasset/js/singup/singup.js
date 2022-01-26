@@ -124,29 +124,29 @@ function validateMail(){
             if (respuesta==1) {
                  // document.getElementById("btnProfile").disabled s= false;
                }else if(respuesta == 2){
-                  swal({
-                      title: 'Error',
-                      text: 'El correo ya se encuentar registrado en la Tienda Virtual',
-                      type: 'error',
-                      padding: '2em'
-                  })
-                  document.getElementById("email").value="";
-               }
-               else if(respuesta==0){
+                swal({
+                  title: 'Error',
+                  text: 'El correo ya se encuentar registrado en la Tienda Virtual',
+                  type: 'error',
+                  padding: '2em'
+                })
+                document.getElementById("email").value="";
+              }
+              else if(respuesta==0){
 
-                  swal({
-                      title: 'Error',
-                      text: alertDuplicateMail,
-                      type: 'error',
-                      padding: '2em'
-                  })
-                  document.getElementById("email").value="";
+                swal({
+                  title: 'Error',
+                  text: alertDuplicateMail,
+                  type: 'error',
+                  padding: '2em'
+                })
+                document.getElementById("email").value="";
 
 
 
-                  }
-                }
-              });
+              }
+            }
+          });
   }
 }
 
@@ -297,10 +297,10 @@ function validateMail(){
                     location.href="http://mitiendanikken.com/mitiendanikken/auto/login/"+correo+"";
 
 
-*/
+                    */
 
-function CodeBien(){
-    var codigo = document.getElementById("code-sponsor").value;
+                    function CodeBien(){
+                      var codigo = document.getElementById("code-sponsor").value;
         //alert(codigo);
         $.ajax({
           type: "GET",
@@ -322,7 +322,7 @@ function CodeBien(){
 
        });
 
-}
+      }
 
     /**
 * Función que valida que el email digitado no se enceuntre en la BD SQL y que no este vacio
@@ -492,7 +492,7 @@ function Search_sponsor_Valid(){
 
           $("#view-name-sponsor").append('<p ><input type="text" class="btn btn-info" value='+registro.codigo+' onclick="funciontomarcodigo(this.value)">'+registro.nombre+'</p>');
           document.getElementById('demo').removeAttribute('hidden',true);
-             document.getElementById('demo').setAttribute('hidden',true);
+          document.getElementById('demo').setAttribute('hidden',true);
             //$("#view-name-sponsor").append('<p><button class="btn btn-info" value='+registro.codigo+' onclick="funciontomarcodigo(this.value)">'+registro.nombre+'  '+registro.codigo+'</button></p>');
 
 
@@ -590,10 +590,10 @@ function getCities(){
 
          }
        });
-}
-  /*CHILE CHANGUE CIUDAD*/
+      }
+      /*CHILE CHANGUE CIUDAD*/
 
-        /*CHILE CHANGUE CIUDAD*/
+      /*CHILE CHANGUE CIUDAD*/
       function getCiudades(){
         var ciudades = $('#ciudad').val();
 
@@ -621,7 +621,7 @@ function getCities(){
         error: function(data) {
 
         }
-        });
+      });
       }
       /*CHILE CHANGUE CIUDAD*/
 
@@ -725,7 +725,7 @@ function cl_or_abi(value){
     document.getElementById('abi').removeAttribute('hidden',true);
     document.getElementById('abi').setAttribute('hidden',true);
     document.getElementById('kits').setAttribute('hidden',true);
-document.getElementById('kits-cb').removeAttribute('hidden',true);
+    document.getElementById('kits-cb').removeAttribute('hidden',true);
     div_texto_club_or_abi =  document.getElementById('cborabitxt');
     document.getElementById('show-playeras').setAttribute('hidden',true);
     document.getElementById('shirt-sample').setAttribute('hidden',true);
@@ -802,14 +802,14 @@ function type_person(value){
     // div_Cambiar_size_input.classList.remove('col-md-12');
     // div_Cambiar_size_input.className += " col-md-6";
 
-     document.getElementById('name_titular_two_div').removeAttribute('hidden',true);
-     document.getElementById('name_titular_two_div').setAttribute('hidden',true);
+    document.getElementById('name_titular_two_div').removeAttribute('hidden',true);
+    document.getElementById('name_titular_two_div').setAttribute('hidden',true);
 
 
-     /*UPLOAD FILES*/
-     document.getElementById('personanatural').removeAttribute('hidden',true);
-     document.getElementById('personajuridica').setAttribute('hidden',true);
-   }
+    /*UPLOAD FILES*/
+    document.getElementById('personanatural').removeAttribute('hidden',true);
+    document.getElementById('personajuridica').setAttribute('hidden',true);
+  }
    else if(value=="2"){ //persona natural con actividades
      // document.getElementById('socio_econ').removeAttribute('disabled',true); 
      document.getElementById('socio_econ').value="";
@@ -866,7 +866,7 @@ function type_person(value){
     //document.getElementById('gender').removeAttribute('hidden',true);
    // document.getElementById('gender').setAttribute('hidden',true);
 
-    /*Si oculta el campo genero hace mas grande el campo email */
+   /*Si oculta el campo genero hace mas grande el campo email */
     //div_Cambiar_size_input = document.getElementById('mail');
     //div_Cambiar_size_input.classList.remove('col-md-12');
     //div_Cambiar_size_input.className += " col-md-12";
@@ -876,7 +876,7 @@ function type_person(value){
 
 
     document.getElementById('personajuridica').removeAttribute('hidden',true);
-     document.getElementById('personanatural').setAttribute('hidden',true);
+    document.getElementById('personanatural').setAttribute('hidden',true);
   }
 }
 
@@ -917,7 +917,7 @@ function Opacity_type_sponsor(value)
         document.getElementById("code-sponsor-validate").value = "0";
 
       }
-}
+    }
 
     function isValidRUT() {
       var rut= $("#rut_nat").val();
